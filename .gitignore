@@ -31,7 +31,3 @@ test-mail.js
 
 # Local Netlify folder
 .netlify
-
-# Local payment page files
-src/hooks/useExternalScript.js
-src/pages/PaymentDetails.jsx
