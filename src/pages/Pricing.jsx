@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import { FaCheckCircle, FaStar } from "react-icons/fa";
 import PageHero from "../components/PageHero";
 import { fadeUp, staggerContainer, staggerItem } from "../animations/variants";
@@ -14,6 +13,36 @@ export default function Pricing() {
   });
 
   const { ref, isInView } = useScrollReveal();
+
+  const HOSTED_PAYMENT_URL = "https://pages.razorpay.com/pl_T9M4P1xtR0lUnn/view";
+  const SIMPLE_HOSTED_PAYMENT_URL = "https://rzp.io/rzp/6XcH8YQj";
+  const planAmounts = {
+    Gold: 25960,
+    Platinum: 36580,
+  };
+
+  const buildPaymentUrl = (amount) => {
+    const normalized = String(amount).trim();
+    if (!/^\d+$/.test(normalized)) return null;
+
+    const numericAmount = Number(normalized);
+    if (!Number.isFinite(numericAmount) || numericAmount <= 0) return null;
+
+    return `${HOSTED_PAYMENT_URL}?amount=${numericAmount}`;
+  };
+
+  const handlePayNow = (plan) => {
+    const paymentUrl =
+      plan.name === "Partial Amount"
+        ? SIMPLE_HOSTED_PAYMENT_URL
+        : buildPaymentUrl(planAmounts[plan.name]);
+
+    if (!paymentUrl) {
+      return;
+    }
+
+    window.location.assign(paymentUrl);
+  };
 
   const plans = [
     {
@@ -132,12 +161,13 @@ export default function Pricing() {
                   ))}
                 </ul>
 
-                <Link
-                  to={`/payment?plan=${encodeURIComponent(plan.name)}`}
+                <button
+                  type="button"
+                  onClick={() => handlePayNow(plan)}
                   className={`block text-center w-full py-3.5 rounded-btn font-bold font-heading transition-all duration-200 ${plan.buttonClass}`}
                 >
                   {plan.buttonText}
-                </Link>
+                </button>
               </motion.div>
             ))}
           </motion.div>
