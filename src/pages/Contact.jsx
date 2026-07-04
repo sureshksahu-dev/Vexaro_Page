@@ -9,7 +9,13 @@ import {
   FaCheckCircle,
   FaIdCard,
   FaPhoneAlt,
+  FaCcVisa,
+  FaCcMastercard,
+  FaUniversity,
+  FaMobileAlt,
+  FaRupeeSign,
 } from "react-icons/fa";
+import { useSearchParams } from "react-router-dom";
 import PageHero from "../components/PageHero";
 import { fadeUp, slideLeft, slideRight } from "../animations/variants";
 import { useScrollReveal } from "../hooks/useScrollReveal";
@@ -22,12 +28,14 @@ export default function Contact() {
   });
   const s1 = useScrollReveal();
   const s2 = useScrollReveal();
+  const [searchParams] = useSearchParams();
+  const selectedPlan = searchParams.get("plan");
   const [form, setForm] = useState({
     name: "",
     email: "",
     phone: "",
     company: "",
-    subject: "",
+    subject: selectedPlan ? `Enquiry for ${selectedPlan} plan` : "",
     message: "",
     botField: "",
   });
@@ -166,7 +174,9 @@ export default function Contact() {
                         email: "",
                         phone: "",
                         company: "",
-                        subject: "",
+                        subject: selectedPlan
+                          ? `Enquiry for ${selectedPlan} plan`
+                          : "",
                         message: "",
                         botField: "",
                       });
@@ -342,6 +352,32 @@ export default function Contact() {
                   </div>
                 ))}
               </div>
+
+              <div className="rounded-card border border-soft-border bg-white p-4 shadow-card">
+                <div className="flex items-center gap-2 text-sm font-semibold font-heading text-charcoal mb-3">
+                  <FaRupeeSign className="text-orange" />
+                  Payment Options
+                </div>
+                <div className="space-y-2 text-sm text-graphite font-body">
+                  <div className="flex items-center gap-2">
+                    <FaCcVisa className="text-navy" />
+                    <span>Visa and Mastercard accepted</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <FaCcMastercard className="text-orange" />
+                    <span>Secure card payments available</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <FaMobileAlt className="text-orange" />
+                    <span>UPI and wallet payments supported</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <FaUniversity className="text-navy" />
+                    <span>Bank transfer available on request</span>
+                  </div>
+                </div>
+              </div>
+
               <div className="flex flex-wrap gap-3 pt-2">
                 {[
                   {

@@ -133,7 +133,7 @@ export default function Pricing() {
                 </ul>
 
                 <Link
-                  to={`/contact?plan=${encodeURIComponent(plan.name)}`}
+                  to={`/payment?plan=${encodeURIComponent(plan.name)}`}
                   className={`block text-center w-full py-3.5 rounded-btn font-bold font-heading transition-all duration-200 ${plan.buttonClass}`}
                 >
                   {plan.buttonText}
