@@ -14,7 +14,8 @@ export default function Pricing() {
 
   const { ref, isInView } = useScrollReveal();
 
-  const HOSTED_PAYMENT_URL = "https://pages.razorpay.com/pl_T9M4P1xtR0lUnn/view";
+  const HOSTED_PAYMENT_URL =
+    "https://pages.razorpay.com/pl_T9M4P1xtR0lUnn/view";
   const SIMPLE_HOSTED_PAYMENT_URL = "https://rzp.io/rzp/6XcH8YQj";
   const planAmounts = {
     Gold: 25960,
