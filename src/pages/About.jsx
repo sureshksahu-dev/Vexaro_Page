@@ -73,9 +73,9 @@ export default function About() {
               <ul className="space-y-3">
                 {[
                   "Headquartered in Vijay Nagar, Indore, MP",
-                  "500+ Cities across India",
-                  "50,000+ daily shipments",
-                  "10,000+ trusted clients",
+                  "100+ Cities across India",
+                  "2,500+ daily shipments",
+                  "300+ trusted clients",
                 ].map((item, i) => (
                   <li
                     key={i}
@@ -108,10 +108,10 @@ export default function About() {
                   </div>
                   <div className="grid grid-cols-2 gap-4">
                     {[
-                      { v: "50K+", l: "Daily Shipments" },
-                      { v: "500+", l: "Cities Served" },
-                      { v: "10K+", l: "Business Clients" },
-                      { v: "98.5%", l: "Success Rate" },
+                      { v: "2.5K+", l: "Daily Shipments" },
+                      { v: "100+", l: "Cities Served" },
+                      { v: "300+", l: "Business Clients" },
+                      { v: "98%", l: "Success Rate" },
                     ].map((s, i) => (
                       <div
                         key={i}
@@ -234,7 +234,7 @@ export default function About() {
               {
                 icon: "⚡",
                 title: "Speed at Scale",
-                text: "50,000+ daily shipments processed with 98.5% on-time delivery through optimised last-mile networks.",
+                text: "2,500+ daily shipments processed with 98% on-time delivery through optimised last-mile networks.",
               },
               {
                 icon: "🔒",
@@ -322,8 +322,8 @@ export default function About() {
             className="grid grid-cols-2 md:grid-cols-4 gap-5 mb-10"
           >
             {[
-              { v: "500+", l: "Cities", s: "Pan-India coverage" },
-              { v: "800+", l: "Pin Codes", s: "Last-mile reach" },
+              { v: "100+", l: "Cities", s: "Pan-India coverage" },
+              { v: "1,000+", l: "Pin Codes", s: "Last-mile reach" },
               { v: "20+", l: "Hubs", s: "Fulfilment centres" },
               { v: "5000+", l: "Agents", s: "Last-mile partners" },
             ].map((s, i) => (

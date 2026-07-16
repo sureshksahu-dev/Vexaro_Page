@@ -92,7 +92,7 @@ const partnerTypes = [
   {
     icon: <FaTruck size={22} className="text-navy" />,
     title: "Courier Partners",
-    text: "Last-mile delivery agents, fleet operators, and hub partners across 500+ cities.",
+    text: "Last-mile delivery agents, fleet operators, and hub partners across 100+ cities.",
     color: "navy",
   },
   {
@@ -287,10 +287,10 @@ export default function Partners() {
               className="grid grid-cols-2 gap-4"
             >
               {[
-                { v: "500+", l: "Cities" },
-                { v: "10K+", l: "Clients" },
-                { v: "50K+", l: "Daily Shipments" },
-                { v: "98.5%", l: "Success Rate" },
+                { v: "100+", l: "Cities" },
+                { v: "300+", l: "Clients" },
+                { v: "2.5K+", l: "Daily Shipments" },
+                { v: "98%", l: "Success Rate" },
               ].map((s, i) => (
                 <div
                   key={i}

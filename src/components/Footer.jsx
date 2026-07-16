@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import {
   FaInstagram,
   FaWhatsapp,
-  FaLinkedin,
+  FaFacebook,
   FaEnvelope,
   FaMapMarkerAlt,
   FaArrowRight,
@@ -53,9 +53,9 @@ export default function Footer() {
                   label: "WhatsApp",
                 },
                 {
-                  icon: <FaLinkedin size={15} />,
-                  href: "https://linkedin.com",
-                  label: "LinkedIn",
+                  icon: <FaFacebook size={15} />,
+                  href: "https://www.facebook.com/people/Vexaro-Courier-Solution-Pvt-Ltd/61591609943588/",
+                  label: "Facebook",
                 },
                 {
                   icon: <FaEnvelope size={14} />,
@@ -171,19 +171,31 @@ export default function Footer() {
               </li>
               <li>
                 <div className="space-y-2 text-sm font-body text-white/50">
-                  <a
-                    href="mailto:info@vexarocouriersolutions.com"
-                    className="flex items-center gap-2 hover:text-orange transition-colors"
-                  >
-                    <FaEnvelope
-                      className="text-orange flex-shrink-0"
-                      size={12}
-                    />
-                    <span>Email:</span>
-                    <span className="text-white/70">
-                      info@vexarocouriersolutions.com
-                    </span>
-                  </a>
+                  <div className="flex flex-col gap-1.5">
+                    <a
+                      href="mailto:info@vexarocouriersolutions.com"
+                      className="flex items-center gap-2 hover:text-orange transition-colors"
+                    >
+                      <FaEnvelope
+                        className="text-orange flex-shrink-0"
+                        size={12}
+                      />
+                      <span>Email:</span>
+                      <span className="text-white/70">
+                        info@vexarocouriersolutions.com
+                      </span>
+                    </a>
+                    <a
+                      href="mailto:vexarocouriersolution@gmail.com"
+                      className="flex items-center gap-2 hover:text-orange transition-colors"
+                    >
+                      <div className="w-3 flex-shrink-0" />
+                      <span className="invisible select-none">Email:</span>
+                      <span className="text-white/70">
+                        vexarocouriersolution@gmail.com
+                      </span>
+                    </a>
+                  </div>
                   <a
                     href="tel:+919183888181"
                     className="flex items-center gap-2 hover:text-orange transition-colors"

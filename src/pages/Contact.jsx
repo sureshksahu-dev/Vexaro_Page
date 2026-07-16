@@ -5,7 +5,7 @@ import {
   FaMapMarkerAlt,
   FaInstagram,
   FaWhatsapp,
-  FaLinkedin,
+  FaFacebook,
   FaCheckCircle,
   FaIdCard,
   FaPhoneAlt,
@@ -101,7 +101,7 @@ export default function Contact() {
       setErrors({
         form:
           err?.message ||
-          "We could not send your message right now. Please try again in a moment or email info@vexarocouriersolutions.com directly.",
+          "We could not send your message right now. Please try again in a moment or email info@vexarocouriersolutions.com / vexarocouriersolution@gmail.com directly.",
       });
     } finally {
       setLoading(false);
@@ -299,17 +299,30 @@ export default function Contact() {
                     full: true,
                     content: (
                       <div className="space-y-4">
-                        <div className="flex items-center gap-4">
-                          <div className="w-10 h-10 rounded-lg bg-white border border-soft-border flex items-center justify-center shadow-card">
+                        <div className="flex items-start gap-4">
+                          <div className="w-10 h-10 rounded-lg bg-white border border-soft-border flex items-center justify-center flex-shrink-0 shadow-card mt-0.5">
                             <FaEnvelope size={16} className="text-orange" />
                           </div>
 
-                          <p className="text-graphite text-sm font-body">
+                          <div className="text-graphite text-sm font-body">
                             <span className="font-semibold text-charcoal">
                               Email:
-                            </span>{" "}
-                            info@vexarocouriersolutions.com
-                          </p>
+                            </span>
+                            <div className="flex flex-col gap-1 mt-1">
+                              <a
+                                href="mailto:info@vexarocouriersolutions.com"
+                                className="hover:text-orange text-graphite transition-colors"
+                              >
+                                info@vexarocouriersolutions.com
+                              </a>
+                              <a
+                                href="mailto:vexarocouriersolution@gmail.com"
+                                className="hover:text-orange text-graphite transition-colors"
+                              >
+                                vexarocouriersolution@gmail.com
+                              </a>
+                            </div>
+                          </div>
                         </div>
 
                         <div className="flex items-center gap-4">
@@ -333,7 +346,7 @@ export default function Contact() {
                     full: true,
                     content: (
                       <div className="text-graphite text-sm font-body space-y-0.5 leading-relaxed">
-                        <div>Operating across 500+ cities in India</div>
+                        <div>Operating across 100+ cities in India</div>
                         <div>Customer support available 24/7</div>
                       </div>
                     ),
@@ -353,31 +366,6 @@ export default function Contact() {
                 ))}
               </div>
 
-              <div className="rounded-card border border-soft-border bg-white p-4 shadow-card">
-                <div className="flex items-center gap-2 text-sm font-semibold font-heading text-charcoal mb-3">
-                  <FaRupeeSign className="text-orange" />
-                  Payment Options
-                </div>
-                <div className="space-y-2 text-sm text-graphite font-body">
-                  <div className="flex items-center gap-2">
-                    <FaCcVisa className="text-navy" />
-                    <span>Visa and Mastercard accepted</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <FaCcMastercard className="text-orange" />
-                    <span>Secure card payments available</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <FaMobileAlt className="text-orange" />
-                    <span>UPI and wallet payments supported</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <FaUniversity className="text-navy" />
-                    <span>Bank transfer available on request</span>
-                  </div>
-                </div>
-              </div>
-
               <div className="flex flex-wrap gap-3 pt-2">
                 {[
                   {
@@ -391,14 +379,19 @@ export default function Contact() {
                     label: "WhatsApp",
                   },
                   {
-                    icon: <FaLinkedin size={15} />,
-                    href: "https://linkedin.com",
-                    label: "LinkedIn",
+                    icon: <FaFacebook size={15} />,
+                    href: "https://www.facebook.com/people/Vexaro-Courier-Solution-Pvt-Ltd/61591609943588/",
+                    label: "Facebook",
                   },
                   {
                     icon: <FaEnvelope size={14} />,
                     href: "mailto:info@vexarocouriersolutions.com",
-                    label: "Email",
+                    label: "info@vexarocouriersolutions.com",
+                  },
+                  {
+                    icon: <FaEnvelope size={14} />,
+                    href: "mailto:vexarocouriersolution@gmail.com",
+                    label: "vexarocouriersolution@gmail.com",
                   },
                 ].map((s, i) => (
                   <a
@@ -441,7 +434,7 @@ export default function Contact() {
             className="flex flex-wrap gap-4 justify-center"
           >
             {[
-              ["500+ Cities", "Coverage"],
+              ["100+ Cities", "Coverage"],
               ["24/7 Support", "Support"],
               ["Trusted Partners", "Partners"],
               ["Technology-First", "Edge"],

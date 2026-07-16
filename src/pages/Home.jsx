@@ -537,7 +537,7 @@ function PremiumCta({ isInView, sectionRef }) {
             Ready to Ship Smarter?
           </h2>
           <p className="text-white/72 font-body text-lg mb-8 max-w-lg mx-auto">
-            Join 10,000+ businesses that trust VEXARO. Get a custom quote today.
+            Join 300+ businesses that trust VEXARO. Get a custom quote today.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
@@ -563,7 +563,7 @@ export default function Home() {
   useSEO({
     title: "Home",
     description:
-      "VEXARO — India's modern courier partner. Express delivery, B2B courier services, e-commerce shipping across 500+ cities.",
+      "VEXARO — India's modern courier partner. Express delivery, B2B courier services, e-commerce shipping across 100+ cities.",
   });
 
   const heroRef = useRef(null);
@@ -678,7 +678,7 @@ export default function Home() {
                 transition={{ duration: 0.7, delay: 0.2 }}
                 className="text-graphite text-base md:text-lg font-body leading-relaxed mb-5 md:mb-8 max-w-md font-medium"
               >
-                VEXARO powers 50,000+ daily shipments across 500+ cities —
+                VEXARO powers 2,500+ daily shipments across 100+ cities —
                 combining technology, speed, and reliability to build the future
                 of India's courier services.
               </motion.p>
@@ -750,29 +750,28 @@ export default function Home() {
           >
             {[
               {
-                value: 50000,
+                value: 2500,
                 suffix: "+",
                 label: "Daily Shipments",
                 icon: FaTruck,
                 color: "orange",
               },
               {
-                value: 500,
+                value: 100,
                 suffix: "+",
                 label: "Cities Covered",
                 icon: FaMapMarkedAlt,
                 color: "navy",
               },
               {
-                value: 98.5,
+                value: 98,
                 suffix: "%",
                 label: "Success Rate",
                 icon: FaCheckCircle,
                 color: "orange",
-                decimal: true,
               },
               {
-                value: 10000,
+                value: 300,
                 suffix: "+",
                 label: "Happy Clients",
                 icon: FaHandshake,
@@ -815,7 +814,7 @@ export default function Home() {
               <p className="text-graphite font-body leading-relaxed mb-8">
                 From individual parcels to enterprise supply chains, our
                 platform brings real-time visibility, seamless integrations, and
-                a 98.5% delivery success rate that businesses across India rely
+                a 98% delivery success rate that businesses across India rely
                 on every day.
               </p>
               <Link
@@ -847,7 +846,7 @@ export default function Home() {
                 {
                   icon: <FaMapMarkedAlt size={20} className="text-navy" />,
                   title: "Pan-India Reach",
-                  text: "500+ cities, 800+ serviceable pin codes nationwide.",
+                  text: "100+ cities, 1,000+ serviceable pin codes nationwide.",
                   image: "/pan-india-reach.png",
                 },
                 {
@@ -999,7 +998,7 @@ export default function Home() {
               {
                 icon: <FaBolt size={20} />,
                 title: "Speed & Precision",
-                text: "Express networks for 98.5% on-time delivery. Every route optimised for speed without compromising safety.",
+                text: "Express networks for 98% on-time delivery. Every route optimised for speed without compromising safety.",
                 color: "orange",
                 image: "/speed-precision.png",
               },
@@ -1027,7 +1026,7 @@ export default function Home() {
               {
                 icon: <FaMapMarkedAlt size={20} />,
                 title: "Widest Network",
-                text: "500+ cities, 800+ pin codes, and fulfilment hubs ensuring last-mile reach in Tier 3 cities.",
+                text: "100+ cities, 1,000+ pin codes, and fulfilment hubs ensuring last-mile reach in Tier 3 cities.",
                 color: "orange",
                 image: "/widest-network.png",
               },

@@ -247,14 +247,22 @@ export default function PaymentDetails() {
                     Contact Information
                   </p>
                   <div className="space-y-4 text-graphite">
-                    <div className="flex items-center gap-3">
-                      <FaEnvelope className="text-navy" />
-                      <a
-                        href="mailto:info@vexarocouriersolutions.com"
-                        className="text-sm font-medium text-charcoal hover:text-navy transition-colors"
-                      >
-                        info@vexarocouriersolutions.com
-                      </a>
+                    <div className="flex items-start gap-3">
+                      <FaEnvelope className="text-navy mt-1" />
+                      <div className="flex flex-col gap-1">
+                        <a
+                          href="mailto:info@vexarocouriersolutions.com"
+                          className="text-sm font-medium text-charcoal hover:text-navy transition-colors"
+                        >
+                          info@vexarocouriersolutions.com
+                        </a>
+                        <a
+                          href="mailto:vexarocouriersolution@gmail.com"
+                          className="text-sm font-medium text-charcoal hover:text-navy transition-colors"
+                        >
+                          vexarocouriersolution@gmail.com
+                        </a>
+                      </div>
                     </div>
                     <div className="flex items-center gap-3">
                       <FaPhoneAlt className="text-navy" />

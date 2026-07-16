@@ -28,12 +28,12 @@ const SLIDES = [
     index: 0,
     tag: "01 / 04",
     title: "Lightning-Fast Delivery",
-    headline: "50,000+ shipments.\nEvery single day.",
-    body: "VEXARO's express network covers 500+ cities with optimised last-mile routing. Next-day delivery to 200+ metros, same-day in 50+ cities — backed by a 98.5% on-time success rate.",
+    headline: "2,500+ shipments.\nEvery single day.",
+    body: "VEXARO's express network covers 100+ cities with optimised last-mile routing. Next-day delivery to major metros, same-day in key cities — backed by a 98% on-time success rate.",
     bullets: [
-      "Next-day delivery to 200+ cities",
+      "Next-day delivery to key cities",
       "Same-day service — book by 10 AM",
-      "98.5% on-time delivery guarantee",
+      "98% on-time delivery guarantee",
       "Priority handling throughout",
     ],
     /* Slide 1: Warm cream → pale gold */
@@ -70,11 +70,11 @@ const SLIDES = [
     index: 2,
     tag: "03 / 04",
     title: "Pan-India Network",
-    headline: "500+ cities.\n800+ pin codes. One partner.",
+    headline: "100+ cities.\n1,000+ pin codes. One partner.",
     body: "VEXARO's infrastructure spans Tier 1 metros to Tier 3 towns. With 20+ strategic fulfilment hubs and 5,000+ last-mile agents, we ensure your shipment reaches even the most remote destinations.",
     bullets: [
-      "500+ cities nationwide",
-      "800+ serviceable pin codes",
+      "100+ cities nationwide",
+      "1,000+ serviceable pin codes",
       "20+ strategic fulfilment hubs",
       "5,000+ last-mile agents",
     ],
@@ -157,9 +157,9 @@ function SlideVisual({ visual }) {
           ))}
           <div className="mt-5 pt-4 border-t border-blue-100 flex gap-3">
             {[
-              ["50K+", "Today"],
-              ["98.5%", "On-Time"],
-              ["500+", "Cities"],
+              ["2.5K+", "Today"],
+              ["98%", "On-Time"],
+              ["100+", "Cities"],
             ].map(([v, l]) => (
               <div
                 key={l}
@@ -306,7 +306,7 @@ function SlideVisual({ visual }) {
           </div>
           <div className="bg-gradient-to-r from-blue-50 to-yellow-50 border border-blue-200 rounded-xl p-3 text-center">
             <span className="text-2xl font-bold font-heading gradient-text">
-              500+
+              100+
             </span>
             <span className="text-graphite text-xs font-body ml-2">
               cities connected
@@ -468,7 +468,7 @@ export default function ScrollCarousel() {
         </h2>
         <p className="text-graphite font-body max-w-xl mx-auto text-base">
           Scroll to explore what makes VEXARO the courier partner of choice for
-          10,000+ Indian businesses.
+          300+ Indian businesses.
         </p>
       </div>
 
