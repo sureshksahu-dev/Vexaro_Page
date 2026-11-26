@@ -267,10 +267,10 @@ export default function PaymentDetails() {
                     <div className="flex items-center gap-3">
                       <FaPhoneAlt className="text-navy" />
                       <a
-                        href="tel:+919183888181"
+                        href="tel:+917024262355"
                         className="text-sm font-medium text-charcoal hover:text-navy transition-colors"
                       >
-                        +91-9183888181
+                        +91-7024262355
                       </a>
                     </div>
                   </div>
