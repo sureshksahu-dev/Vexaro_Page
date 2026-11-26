@@ -49,7 +49,7 @@ export default function Footer() {
                 },
                 {
                   icon: <FaWhatsapp size={15} />,
-                  href: "https://wa.me/919183888181",
+                  href: "https://wa.me/917024262355",
                   label: "WhatsApp",
                 },
                 {
@@ -163,7 +163,7 @@ export default function Footer() {
                 />
                 <span className="leading-relaxed">
                   <span className="whitespace-nowrap">
-                    Flat 1113, 1st Floor, Chikitsak Nagar,
+                    308, Shagun tower, 
                   </span>
                   <br />
                   Vijay Nagar, Indore, MP — 452010
@@ -197,7 +197,7 @@ export default function Footer() {
                     </a>
                   </div>
                   <a
-                    href="tel:+919183888181"
+                    href="tel:+917024262355"
                     className="flex items-center gap-2 hover:text-orange transition-colors"
                   >
                     <FaPhoneAlt
@@ -205,7 +205,7 @@ export default function Footer() {
                       size={12}
                     />
                     <span>Phone:</span>
-                    <span className="text-white/70">+91 - 9183888181</span>
+                    <span className="text-white/70">+91 - 7024262355</span>
                   </a>
                 </div>
               </li>

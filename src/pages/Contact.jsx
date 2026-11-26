@@ -287,7 +287,7 @@ export default function Contact() {
                     full: true,
                     content: (
                       <span className="text-graphite text-sm font-body leading-relaxed">
-                        Flat 1113, 1st Floor, Chikitsak Nagar,
+                        308, Shagun tower, 
                         <br />
                         Vijay Nagar, Indore, MP — 452010
                       </span>
@@ -334,7 +334,7 @@ export default function Contact() {
                             <span className="font-semibold text-charcoal">
                               Phone:
                             </span>{" "}
-                            +91-9183888181
+                            +91-7024262355
                           </p>
                         </div>
                       </div>
@@ -375,7 +375,7 @@ export default function Contact() {
                   },
                   {
                     icon: <FaWhatsapp size={15} />,
-                    href: "https://wa.me/919183888181",
+                    href: "https://wa.me/917024262355",
                     label: "WhatsApp",
                   },
                   {
